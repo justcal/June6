@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script  type="text/javascript" src="js/myAJAXlib.js"></script>
+<script  type="text/javascript" src="js/myJS.js"></script>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<h1>Get operation</h1>
+	<div id="getXML">
+		<form action="" method="get">
+		<input type="button" value="Get XML"  id="getXMLid" onclick="doQuery_getXML();" />
+	</form>
+	</div>
+	
+	<div id="getJson">
+		<form action="" method="get">
+		<input type="button" value="Get Json" id="getJsonid" onclick="doQuery_getJson();"/>
+	</form>
+	</div>
+	
+	<div id="getText">
+		<form action="" method="get">
+		<input type="button" value="Get text"  id="getTextid" onclick="doQuery_getText();"/>
+	</form>
+	</div>
+	
+	
+	<h1>Retrieve a publication by its id, (enter 4)</h1>
+	<div id="getByKey">
+		<form action="" method="get">
+		<p>
+			Id : <input type="text" name="id" id="getByKeyByid"/>
+		</p>
+		<input type="submit" value="Get by Key" onclick="doQuery_getByKey();"/>
+	</form>
+	</div>
+	
+	<h1>Add a new publication</h1>
+	
+	<div id="postJson">
+	<form action="" method="post">
+		<p>
+			Id : <input type="text" name="id" id="nameCreateNewPost"/>
+		</p>
+		<p>
+			Title : <input type="text" name="title" id="titleCreateNewPost"/>
+		</p>
+		<p>
+			Subject : <input type="text" name="subject" id="subjectCreateNewPost" />
+		</p>
+		<p>
+			Author : <input type="text" name="author" id="authorCreateNewPost" />
+		</p>
+		<input type="submit" value="Add post" onclick="doQuery_postJson();"/>
+	</form>
+	</div>
+	
+	<h1>Update an existing publication</h1>
+	<div id="updateJson">
+	<form action="" method="post">
+		<p>
+			Id : <input type="text" name="id" id="nameUpdateNewPost"/>
+		</p>
+		<p>
+			Title : <input type="text" name="title" id="titleUpdateNewPost"/>
+		</p>
+		<p>
+			Subject : <input type="text" name="subject" id="subjectUpdateNewPost" />
+		</p>
+		<p>
+			Author : <input type="text" name="author" id="authorUpdateNewPost" />
+		</p>
+		<input type="submit" value="Update post" onclick="doQuery_updateJson();" />
+	</form>
+	</div>
+
+	<h1>delete an existing publication</h1>
+		<div id="deleteJson">
+		<form action="" method="post">
+		<p>
+			Id : <input type="text" name="id" id="nameDeletePost"/>
+		</p>
+		
+		<input type="submit" value="Delete post" onclick="doQuery_deleteJson();" />
+	</form>
+   		</div>
+
+	<div id="extra"></div>
+
+</body>
+
+</html>
